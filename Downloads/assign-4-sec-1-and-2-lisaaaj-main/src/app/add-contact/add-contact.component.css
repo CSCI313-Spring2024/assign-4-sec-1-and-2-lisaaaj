@@ -1,0 +1,36 @@
+.add-contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-contact-form button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-contact-form .add-button {
+    background-color: #0a5640;
+    color: white;
+    border: none;
+}
+
+.add-contact-form .cancel-button {
+    background-color: #e9e9e9;
+    color: #333;
+    border: none;
+}

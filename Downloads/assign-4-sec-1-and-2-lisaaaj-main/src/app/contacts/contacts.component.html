@@ -1,0 +1,14 @@
+<div class="contacts">
+  <h2>Contact List</h2>
+  <div class="row">
+    <div class="col-md-4 my-2 mx-0" *ngFor="let contact of contacts; trackBy: trackById">
+      <div class="contact-card">
+        <h5 class="contact-fname">{{ contact.fname }} {{ contact.lname }}</h5>
+        <p class="contact-number">Number: {{ contact.number }}</p>
+        <p class="contact-number">Email: {{ contact.email }}</p>
+        <button (click)="goToEdit(contact.id)" class="btn primary">Edit</button>
+        <button (click)="deleteContact(contact.id)" class="btn btn-sm btn-outline-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

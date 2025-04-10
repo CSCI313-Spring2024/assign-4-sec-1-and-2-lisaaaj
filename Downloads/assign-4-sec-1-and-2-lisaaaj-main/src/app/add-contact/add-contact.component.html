@@ -1,0 +1,9 @@
+<div class="add-contact-form">
+  <h2>Add New Contact</h2>
+  <input type="text" [(ngModel)]="newContact.fname" placeholder="First Name" />
+  <input type="text" [(ngModel)]="newContact.lname" placeholder="Last Name" />
+  <input type="text" [(ngModel)]="newContact.number" placeholder="Number" />
+  <input type="text" [(ngModel)]="newContact.email" placeholder="Email" />
+  <button (click)="addContact()" class="add-button">Add Contact</button>
+  <button (click)="cancelAddContact()" class="cancel-button">Cancel</button>
+</div>

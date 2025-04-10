@@ -1,0 +1,14 @@
+<div class="edit-contact-form">
+  <h2>Edit Contact</h2>
+  <div *ngIf="editingContact">
+    <input type="text" [(ngModel)]="editingContact.fname" placeholder="First Name" />
+    <input type="text" [(ngModel)]="editingContact.lname" placeholder="Last Name" />
+    <input type="text" [(ngModel)]="editingContact.number" placeholder="Number" />
+    <input type="text" [(ngModel)]="editingContact.email" placeholder="Email" />
+    <button (click)="updateContact()" class="update-button">Update</button>
+    <button (click)="cancelEdit()" class="cancel-button">Cancel</button>
+  </div>
+  <div *ngIf="!editingContact">
+    <!-- Placeholder for when no contact is being edited -->
+  </div>
+</div>
